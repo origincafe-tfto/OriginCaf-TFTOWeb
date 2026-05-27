@@ -609,6 +609,18 @@
 }
 
 /* ── Footer ─────────────────────────────────────────────────── */
+.landing-a .la-foot-illo-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 40px;
+}
+.landing-a .la-foot-illo-wrap img {
+  width: 200px;
+  max-width: 55%;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.35);
+  transform: rotate(-2deg);
+}
 .landing-a .la-footer {
   padding: 60px 36px 36px;
   position: relative;

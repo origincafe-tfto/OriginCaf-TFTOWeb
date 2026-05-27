@@ -195,6 +195,9 @@ window.LandingA = function LandingA({ tweaks }) {
       {/* FOOTER */}
       <footer className="la-footer" style={{ background: theme.text, color: theme.cream }}>
         <div className="la-foot-mega" style={{ fontFamily: theme.display }}>ORIGIN</div>
+        <div className="la-foot-illo-wrap">
+          <img src="assets/IMG_3394.png" alt="" aria-hidden />
+        </div>
         <div className="la-foot-grid">
           <div>
             <small>Síguenos</small>
