@@ -261,6 +261,31 @@ function HeroPhoto({ theme }) {
 
 function HeroMarquee({ theme }) {
   const letters = ['O', 'R', 'I', 'G', 'I', 'N'];
+  const rowRef = React.useRef(null);
+
+  React.useEffect(() => {
+    const row = rowRef.current;
+    if (!row) return;
+    const h1 = row.querySelector('.la-mega');
+    if (!h1) return;
+
+    const fit = () => {
+      const cs = window.getComputedStyle(h1);
+      const tmp = document.createElement('span');
+      tmp.style.cssText = `font-family:${cs.fontFamily};font-weight:${cs.fontWeight};letter-spacing:${cs.letterSpacing};font-size:200px;visibility:hidden;position:fixed;top:-9999px;left:-9999px;white-space:nowrap;`;
+      tmp.textContent = 'ORIGIN.';
+      document.body.appendChild(tmp);
+      const w = tmp.offsetWidth;
+      document.body.removeChild(tmp);
+      if (!w) return;
+      h1.style.fontSize = Math.floor(window.innerWidth / w * 200) + 'px';
+    };
+
+    document.fonts.ready.then(fit);
+    window.addEventListener('resize', fit);
+    return () => window.removeEventListener('resize', fit);
+  }, []);
+
   return (
     <section className="la-hero la-hero-marquee">
       <div className="la-hero-eyebrow la-anim-fade-down" style={{ fontFamily: theme.body, color: theme.text }}>
@@ -277,7 +302,7 @@ function HeroMarquee({ theme }) {
         nuevo lote
       </span>
 
-      <div className="la-mega-row">
+      <div className="la-mega-row" ref={rowRef}>
         <h1 className="la-mega" style={{ fontFamily: theme.display, color: theme.surface }} aria-label="ORIGIN.">
           {letters.map((ch, i) => (
             <span

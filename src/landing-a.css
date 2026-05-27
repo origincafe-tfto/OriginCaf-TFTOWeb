@@ -692,7 +692,13 @@
     font-size: 92px;
     line-height: 0.9;
   }
-  .landing-a .la-mega-row { gap: 8px; }
+  .landing-a .la-mega-row {
+    gap: 8px;
+    width: 100vw;
+    margin-left: -18px;
+    overflow: hidden;
+    justify-content: center;
+  }
   .landing-a .la-hero-foot {
     grid-template-columns: 1fr;
     gap: 16px;
