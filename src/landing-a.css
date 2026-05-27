@@ -613,19 +613,6 @@
   padding: 60px 36px 36px;
   position: relative;
 }
-.landing-a .la-carriers {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  overflow: hidden;
-  padding: 40px 36px 0;
-}
-.landing-a .la-carriers-img {
-  width: 100%;
-  max-width: 520px;
-  display: block;
-  mix-blend-mode: multiply; /* removes the white background on coral */
-}
 .landing-a .la-foot-mega {
   font-size: 280px;
   line-height: 0.9;

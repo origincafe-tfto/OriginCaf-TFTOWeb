@@ -192,11 +192,6 @@ window.LandingA = function LandingA({ tweaks }) {
         </div>
       </section>
 
-      {/* ILLUSTRATION BREAK */}
-      <section className="la-carriers" style={{ background: theme.bg }}>
-        <img src="assets/IMG_3394.png" alt="Cargadores de café — Yecuatla" className="la-carriers-img" />
-      </section>
-
       {/* FOOTER */}
       <footer className="la-footer" style={{ background: theme.text, color: theme.cream }}>
         <div className="la-foot-mega" style={{ fontFamily: theme.display }}>ORIGIN</div>
