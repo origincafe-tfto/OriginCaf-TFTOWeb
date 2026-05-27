@@ -26,7 +26,7 @@ window.PRODUCTS = [
     blurb: 'Bolsa chica para empezar el rito. Rinde unos días — suficiente para enamorarte. O para regalar y quedar bien.',
     rinde: '~16 tazas',
     color: '#D88B70',
-    bagImg: 'assets/bag-250g.png',
+    bagImg: 'assets/bag-1kg.png',  // small bag = 250g
   },
   {
     id: 'diaria',
@@ -62,7 +62,7 @@ window.PRODUCTS = [
     blurb: 'Para quienes lo toman a diario o lo comparten en casa, oficina o cafetería. El kilo de los devotos.',
     rinde: '~66 tazas',
     color: '#D88B70',
-    bagImg: 'assets/bag-1kg.png',
+    bagImg: 'assets/bag-250g.png',  // large bag = 1kg
   },
 ];
 

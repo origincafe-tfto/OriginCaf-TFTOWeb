@@ -613,6 +613,15 @@
   padding: 60px 36px 36px;
   position: relative;
 }
+.landing-a .la-foot-illo {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto 0;
+  display: block;
+  filter: invert(1) sepia(1) saturate(0) brightness(10) opacity(0.12);
+  pointer-events: none;
+  user-select: none;
+}
 .landing-a .la-foot-mega {
   font-size: 280px;
   line-height: 0.9;
@@ -713,10 +722,10 @@
     text-align: center;
   }
 
-  /* Hero floating stickers — shrink */
+  /* Hero floating stickers — move below eyebrow so they don't overlap */
   .landing-a .la-hero-float { font-size: 12px; padding: 7px 12px; }
-  .landing-a .la-hero-float-1 { top: 16px; left: 4%; }
-  .landing-a .la-hero-float-2 { top: 28px; right: 4%; }
+  .landing-a .la-hero-float-1 { top: auto; bottom: 148px; left: 4%; }
+  .landing-a .la-hero-float-2 { top: auto; bottom: 100px; right: 4%; }
   .landing-a .la-hero-float-3 { display: none; }
 
   .landing-a .la-marquee-strip {
@@ -791,7 +800,7 @@
     padding: 64px 18px 48px;
   }
   .landing-a .la-brand-img-snakes { padding: 0; }
-  .landing-a .la-brand-img-snakes img { max-height: 360px; }
+  .landing-a .la-brand-img-snakes img { max-height: 520px; width: 100%; }
   .landing-a .la-brand-text h2 {
     font-size: 56px;
     margin: 12px 0 16px;
